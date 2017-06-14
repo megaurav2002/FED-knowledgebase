@@ -5,3 +5,10 @@ Webpack at it's core is just a bundling utility. All it needs to run is a entry 
 ```
 webpack ./js/clientApp.jsx public/bundle.js
 ```
+example project:
+
+https://github.com/kentcdodds/es6-todomvc
+
+awesome webpack
+
+https://github.com/webpack-contrib/awesome-webpack

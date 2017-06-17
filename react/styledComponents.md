@@ -18,6 +18,8 @@ const Button = styled.button`
 `
 ```
 
+New evolving concept but there is a performance cost to this.
+
 ### Links
 
 https://www.styled-components.com/

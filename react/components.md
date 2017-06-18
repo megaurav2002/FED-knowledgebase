@@ -24,3 +24,7 @@ Class title extends Components {
 
 }
 ```
+
+### Event param
+
+event param passed on onChange etc is not actually the DOM event, it's custom react event which is pretty much same as the DOM event. 

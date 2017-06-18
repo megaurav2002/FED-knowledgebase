@@ -18,3 +18,9 @@ Instead of using `react-test-renderer` it is recommended to use Enzyme as it all
     expect(component).toMatchSnapshot();
     
 ```
+
+events can be triggered using simulate for e.g. 
+
+```
+component.find('input').simulate('change', { target: { value: searchText}})
+```

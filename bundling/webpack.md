@@ -5,10 +5,15 @@ Webpack at it's core is just a bundling utility. All it needs to run is a entry 
 ```
 webpack ./js/clientApp.jsx public/bundle.js
 ```
-example project:
+
+## Hot Module Replacement
+
+Update a particular component without a hard refresh. Great for development.
+
+## Example Projects:
 
 https://github.com/kentcdodds/es6-todomvc
 
-awesome webpack
+### awesome webpack
 
 https://github.com/webpack-contrib/awesome-webpack

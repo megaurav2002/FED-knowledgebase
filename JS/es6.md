@@ -19,5 +19,17 @@ Arrow functions come with a lot of confusion and inconsistent syntax. https://gi
 
 What makes arrow functions shine is that it doesn't have a `this`. So, when it encounters this, it automatically gets a lexical this.
 
-## Block Scoping
+## Default Values for functions
+
+Sets the default value of 42 if X below is undefined, in every other case including null the value of X will not be set to undefined.  
+
+```
+function foo(x = 42) {
+ // do something
+}
+```
+
+
+
+
 

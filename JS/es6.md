@@ -29,7 +29,26 @@ function foo(x = 42) {
 }
 ```
 
+## Rest/Spread/Gather operator
 
+Accept all the function parameters passed in to an array called args. 
+```
+function (...args) {
+}
+```
+
+The other usage of this operator is called spread operator
+```
+bar(...args)
+```
+will pass multiple params(equal to array length) to bar()
+
+This would work on anything that has iterator built in for e.g. es6 arrays, strings. 
+
+``` This is valid
+var myString = "Hello";
+foo(...myString) // 5 params passed
+```
 
 
 

@@ -6,6 +6,10 @@ Webpack at it's core is just a bundling utility. All it needs to run is a entry 
 webpack ./js/clientApp.jsx public/bundle.js
 ```
 
+## Dependency Graph
+
+When webpack processes your application, it starts from a list of modules defined on the command line or in its config file. Starting from these entry points, webpack recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into a small number of bundles - often, just one - to be loaded by the browser.
+
 ## Hot Module Replacement
 
 Update a particular component without a hard refresh. Great for development.

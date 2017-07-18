@@ -50,5 +50,20 @@ var myString = "Hello";
 foo(...myString) // 5 params passed
 ```
 
+## Array Destructuring
 
+```
+function foo() {
+    return [1, 2, 3];
+}
+var [a, b, c] = foo();
+// a=1, b=2, c=3 
+```
+
+this can also be done for object keys destructuring
+
+```
+var obj = {};
+[obj.a, obj.b, obj.c] = foo();
+```
 

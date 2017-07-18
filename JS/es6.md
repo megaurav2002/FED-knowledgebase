@@ -67,3 +67,20 @@ var obj = {};
 [obj.a, obj.b, obj.c] = foo();
 ```
 
+## Object Destructuring
+
+```
+function foo() {
+    return { a:1, b:2, c:3};
+}
+
+var {
+    a = 10,
+    b: X = 42,
+    c
+}
+```
+
+For a, we have a default value of 10
+For b, we have specified a target variable X with a default value
+For c, get value of c in variable called c with no defaults

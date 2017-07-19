@@ -84,3 +84,40 @@ var {
 For a, we have a default value of 10
 For b, we have specified a target variable X with a default value
 For c, get value of c in variable called c with no defaults
+
+## Symbol
+
+A way of putting special/meta property on an object. 
+
+## Iterator
+
+It's an simple way of stepping through data from a datasource. For e.g. resultSet.next().. consume one at a time.
+
+for of loop can iterate over any iterable e.g. array
+
+## Generators
+
+Its a function that is not immediately executed. It returns an iterator. In essence, it's a function that can be started and stopped many times.
+
+```
+function *main() {
+    console.log("helloworld")
+}
+
+var it = main();
+it.next() // prints helloworld and returns {value:undefined, done:true} as it is finished.
+```
+
+yield can be used to pause a generator function (optionally send a value out) and will be unpaused only on it.next()
+
+```
+function *main() {
+    console.log("hello")
+    yield 9; 
+    console.log("world");
+    return 10; 
+}
+var it = main();
+it.next(); // {value: 9, done: false}
+it.next(); // {value: 10, done: true}
+```

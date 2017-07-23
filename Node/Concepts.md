@@ -11,7 +11,9 @@ NodeJS is a c++ program with V8 embedded and whole bunch of c++ functions to add
 
 V8 is google's open source javaScript engine and is used in Google Chrome and Node. V8 can be used as a standalone program or can be embedded to a c++ application. V8 can be extended by writting c++ function and linking V8 to it. 
 
+### Bit of history
 
+io.js was forked off node as there was a disagreement on how often node should be updated. Few years later a consensus was reached and io.js was merged back into node. 
 
 ### Links
 

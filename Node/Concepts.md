@@ -22,9 +22,9 @@ In Node, we actually talk about 2 different type of events.
 ### Custom Implementation of a simple event system
 
 ```js
-var Emitter = {
+var Emitter = function () {
     this.events = {}
-};
+}
 
 // example usage - Emitter.on("fileLoaded", fn() {//do something})
 Emitter.prototype.on = function(type, listener {

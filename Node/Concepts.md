@@ -19,6 +19,30 @@ In Node, we actually talk about 2 different type of events.
 
 * Custom Events - Events raised from Javascript core. Come from Event Emitter.
 
+### Custom Implementation of a simple event system
+
+```js
+var Emitter = {
+    this.events = {}
+};
+
+// example usage - Emitter.on("fileLoaded", fn() {//do something})
+Emitter.prototype.on = function(type, listener {
+    this.events[type] = this.events[type] || [];
+    this.events[type].push(listener);
+}
+
+// Emitter.emit(fileLoaded)
+Emitter.prototype.emit = function(type) {
+    if (this.events[type]) {
+        this.events[type].foreach(function(listener) {
+            listener();
+        })
+    }
+}
+
+module.exports = Emitter;
+```
 
 ### Bit of history
 

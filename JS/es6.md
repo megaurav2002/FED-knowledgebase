@@ -49,7 +49,10 @@ This would work on anything that has iterator built in for e.g. es6 arrays, stri
 var myString = "Hello";
 foo(...myString) // 5 params passed
 ```
-
+a particular example of spread operator and arrow function could be :
+```js
+const compose = (...fns) => (..args) => fns.forEach(fn => fn && fn(...args));
+```
 ## Array Destructuring
 
 ```

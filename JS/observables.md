@@ -30,4 +30,27 @@ so, you get the below even though 5 arrived before 2
  1...........2......3...4..5.......................6
 }```
 
-Notice, how with concatAll the resultant stream is longer than the individual streams. This is an approach to resolve race conditions.
+Notice, how with concatAll the resultant stream is longer than the individual streams. This is an approach to resolve race conditions. You don't want to use concatAll on an infinite stream as concatAll needs to finish one before moving on to the other ones.
+
+### Take Until
+
+Instead of calling removeeventlistener, we combine two streams so that you stop listening to stream 1 when stream 2 starts emitting
+
+```
+
+    { // start collection
+        1......2...........3
+    }
+    { // stop collection
+        ............4
+    }
+
+
+so you get
+
+
+    {
+        1.......2
+    }
+
+```

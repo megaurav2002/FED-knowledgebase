@@ -54,3 +54,63 @@ so you get
     }
 
 ```
+
+### MergeAll
+
+Use when you dont care about order
+
+```
+{
+    {
+        ....1
+    }
+    {
+        .......2.........3
+    }
+    {
+        ...........4........5
+    }
+}
+```
+gives
+```
+{
+    ....1...2..4...3.5
+}
+```
+
+### SwitchLatest
+
+Switches to the latest observable
+
+```
+{
+    {
+        ....1
+    }
+    {
+        .......2.........3
+    }
+    {
+        ...........4........5
+    }
+}
+```
+gives
+```
+{
+    ....1...2..4...5
+}
+```
+
+## Applying these to real world scenarios - ask these questions
+
+1. What are the collections (inputs) that i have?
+2. What are the collections that i want?
+3. how do i convert from "what i have" to "what i want"?
+4. Once i have got the collection that i want, what i am going to do with data that comes out of it?
+
+
+
+
+
